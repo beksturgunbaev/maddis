@@ -1,0 +1,220 @@
+body {
+  font-family: "SuisseIntl-Regular";
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #222;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("./../../fonts/SuisseIntl-Regular.ttf");
+}
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url("./../../fonts/SuisseIntl-Bold.ttf");
+}
+@font-face {
+  font-family: "SuisseIntl-Medium";
+  src: url("./../../fonts/SuisseIntl-Medium.ttf");
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+}
+@media (max-width: 840px) {
+  header .header {
+    padding-top: 12px;
+  }
+}
+header .header .logo a img {
+  width: 100px;
+}
+@media (max-width: 840px) {
+  header .header .logo a img {
+    width: 80px;
+  }
+}
+header .header .mobile-menu {
+  display: none;
+  font-family: "SuisseIntl-Medium";
+  font-size: 16px;
+  cursor: pointer;
+}
+@media (max-width: 840px) {
+  header .header .mobile-menu {
+    display: block;
+  }
+}
+@media (max-width: 840px) {
+  header .header .nav {
+    display: none;
+  }
+}
+header .header .nav ul {
+  display: flex;
+  align-items: center;
+}
+header .header .nav ul li {
+  margin: 0 10px;
+}
+header .header .nav ul li a {
+  transition: opacity 0.2s;
+  font-size: 0.9em;
+}
+header .header .nav ul li a:hover {
+  opacity: 0.7;
+}
+
+footer {
+  padding-bottom: 40px;
+}
+footer .footer-line {
+  border-top: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  border-radius: 0 1vw 0 0;
+  padding-top: 18px;
+}
+footer .footer-line .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 840px) {
+  footer .footer-line .footer-wrap {
+    flex-wrap: wrap;
+  }
+}
+footer .footer-line .footer-wrap .footer-wrap__item {
+  width: 30%;
+}
+@media (max-width: 840px) {
+  footer .footer-line .footer-wrap .footer-wrap__item {
+    width: auto;
+    margin: 20px 20px 0 0;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-line .footer-wrap .footer-wrap__item {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+footer .footer-line .footer-wrap .footer-wrap__item ul li a {
+  transition: 0.2s opacity;
+  font-size: 1.5em;
+  line-height: 1;
+}
+@media (max-width: 576px) {
+  footer .footer-line .footer-wrap .footer-wrap__item ul li a {
+    font-size: 18px;
+    line-height: 110%;
+  }
+}
+footer .footer-line .footer-wrap .footer-wrap__item ul li a:hover {
+  opacity: 0.5;
+}
+footer .footer-line .footer-wrap .footer-wrap__item ul .small-txt {
+  font-size: 0.875em;
+  margin-bottom: 14px;
+}
+@media (max-width: 576px) {
+  footer .footer-line .footer-wrap .footer-wrap__item ul .small-txt {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+}
+footer .footer-line .footer-wrap__extra {
+  padding-top: 18px;
+  margin-top: 90px;
+  border-top: 2px solid #f2f2f2;
+  margin-right: 18px;
+}
+@media (max-width: 576px) {
+  footer .footer-line .footer-wrap__extra .footer-wrap__item:first-child {
+    margin-top: 0;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+  overflow-y: scroll;
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.menu .menu-content {
+  padding: 24px 12px;
+}
+.menu .menu-content .menu-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menu .menu-content .menu-head a img {
+  width: 100px;
+}
+.menu .menu-content .menu-head span {
+  font-family: "SuisseIntl-Medium";
+  cursor: pointer;
+  font-size: 18px;
+}
+.menu .menu-content ul {
+  margin-top: 22px;
+}
+.menu .menu-content ul li {
+  display: flex;
+  border-top: 2px solid #282828;
+}
+.menu .menu-content ul li a {
+  font-size: 18px;
+  line-height: 111%;
+  width: 100%;
+  padding: 7px 0;
+}
+.menu .menu-content .small-links {
+  margin-top: 30px;
+}
+.menu .menu-content .small-links ul li a {
+  font-size: 12px;
+}
+.menu .menu-content .menu-contacts {
+  margin-top: 30px;
+  border-top: 2px solid #282828;
+}
+.menu .menu-content .menu-contacts .menu-contacts__item {
+  margin: 10px 0 24px;
+}
+.menu .menu-content .menu-contacts .menu-contacts__item .small-txt {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.menu .menu-content .menu-contacts .menu-contacts__item a {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
