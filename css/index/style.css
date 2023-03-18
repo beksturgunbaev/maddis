@@ -152,6 +152,168 @@ footer .footer-line .footer-wrap__extra {
   }
 }
 
+#banner .container {
+  min-height: 45rem;
+  background-image: url("./../../img/main_page/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 1rem;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  display: flex;
+}
+#banner .container .banner-desc {
+  max-width: 740px;
+  max-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#banner .container .banner-desc h1 {
+  font-family: "SuisseIntl-Medium";
+  font-size: 5.5em;
+  font-weight: 500;
+  line-height: 91%;
+  color: #fff;
+  letter-spacing: -0.06em;
+}
+#banner .container .banner-desc button {
+  max-width: 20em;
+  width: 100%;
+  padding: 0.75vw 3vw;
+  border-radius: 100vw;
+  background-color: #1f59f5;
+  transition: 0.3s all;
+  color: #ebeae8;
+  font-size: 0.9em;
+  line-height: 105%;
+  border: none;
+  cursor: pointer;
+}
+#banner .container .banner-desc button:hover {
+  background: #4373f5;
+}
+
+#text-section .container .text-wrap {
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  border-top-right-radius: 1vw;
+  min-height: 350px;
+  border-top: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  border-radius: 0 1vw 0 0;
+  margin: 10px 0;
+}
+#text-section .container .text-wrap .text-wrap__item {
+  padding: 1.25rem;
+}
+#text-section .container .text-wrap .text-wrap__item h1 {
+  font-family: "SuisseIntl-Medium";
+  font-size: 5.5em;
+  line-height: 91%;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+#text-section .container .text-wrap .text-wrap__item p {
+  font-size: 1.5em;
+}
+#text-section .container .text-wrap .text-wrap__item .indent-txt {
+  text-indent: 9.1em;
+}
+
+#cards {
+  padding-bottom: 15rem;
+}
+#cards .cards-wrap {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+#cards .cards-wrap .cards-wrap__item {
+  background: #f2f2f2;
+  border-radius: 1vw;
+  padding: 1.25em;
+  min-height: 352px;
+}
+#cards .cards-wrap .cards-wrap__item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__head p {
+  padding: 0.25vw 1vw;
+  border: 2px solid #282828;
+  border-radius: 100vw;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 105%;
+  margin-right: 7px;
+}
+#cards .cards-wrap .cards-wrap__item a h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 5em;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info {
+  display: flex;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_left {
+  display: flex;
+  max-width: 212px;
+  padding-top: 1.13em;
+  padding-right: 1em;
+  margin-right: 1.25em;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid #404040;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_left p {
+  font-size: 0.8em;
+  line-height: 105%;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_left button {
+  padding: 0.75vw 3vw;
+  border-radius: 100vw;
+  background-color: #1f59f5;
+  transition: background-color 0.3s;
+  color: #ebeae8;
+  font-size: 0.9em;
+  line-height: 105%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_left button:hover {
+  opacity: 0.5;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_right {
+  margin-right: 0.5em;
+}
+#cards .cards-wrap .cards-wrap__item a .cards-item__info .cards-item__info_right img {
+  border-radius: 1vw;
+}
+
 .menu {
   position: fixed;
   top: 0;
