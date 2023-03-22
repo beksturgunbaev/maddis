@@ -2,11 +2,9 @@ let openMenu = document.querySelector('.mobile-menu');
 let closeMenu = document.querySelector('.close-menu');
 let menuModal = document.querySelector('.menu');
 
-const openMenuModal = () => {
+openMenu.onclick = function() {
     menuModal.classList.add('active');
 }
-const closeMenuModal = () => {
+closeMenu.onclick = function() {
     menuModal.classList.remove('active');
 }
-openMenu.addEventListener('click', openMenuModal);
-closeMenu.addEventListener('click', closeMenuModal);
