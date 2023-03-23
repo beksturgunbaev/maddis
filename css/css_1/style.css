@@ -878,4 +878,188 @@
   width: 225px;
   height: 225px;
   border-radius: 32px;
+}
+
+#ui-ux {
+  position: relative;
+  margin-bottom: 2rem;
+}
+#ui-ux img {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+#ui-ux .container .ui-ux__content {
+  border-radius: 1.38vw;
+  background-color: #ebeae8;
+  min-height: 730px;
+  padding: 2rem;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc {
+  max-width: 670px;
+  position: relative;
+  z-index: 1;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc ul {
+  display: flex;
+  align-items: center;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc ul li {
+  font-size: 1rem;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  margin: 0 4px;
+  padding: 3px 10px;
+  border-radius: 100vw;
+  box-shadow: inset 0 0 0 2px #222;
+  text-align: center;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc p span {
+  color: rgba(34, 34, 34, 0.5019607843);
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc h1 {
+  font-family: "SuisseIntl-Medium";
+  margin: 25px 0 30px;
+  color: #232323;
+  font-size: 4rem;
+  line-height: 94%;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc .btns {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc .btns a, #ui-ux .container .ui-ux__content .ui-ux__desc .btns span {
+  padding: 10px;
+  border-radius: 100vw;
+  background-color: #1f59f5;
+  transition: 0.3s all;
+  color: #f6f6f5;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  margin-right: 10px;
+  max-width: 280px;
+  width: 100%;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc .btns a:hover, #ui-ux .container .ui-ux__content .ui-ux__desc .btns span:hover {
+  opacity: 0.7;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc .btns span {
+  color: #131313;
+  background: #f6f6f5;
+}
+#ui-ux .container .ui-ux__content .ui-ux__desc .btns span:hover {
+  opacity: 1;
+}
+
+.def-title {
+  font-family: "SuisseIntl-Medium";
+  color: #232323;
+  font-size: 4em;
+  line-height: 94%;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+
+.body-text-s-white {
+  color: rgba(34, 34, 34, 0.5019607843);
+  font-size: 1.25em;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.body-text {
+  font-size: 1.66em;
+  line-height: 115%;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+#about-design {
+  padding: 4rem 0;
+}
+#about-design .about-design__wrap {
+  display: flex;
+}
+#about-design .about-design__wrap .about-design__item {
+  width: 50%;
+}
+#about-design .about-design__wrap .about-design__item p {
+  margin: 30px 0;
+}
+#about-design .about-design__wrap .about-design__item video {
+  border-radius: 1.38vw;
+  width: 660px;
+  height: 370px;
+  margin: 30px 0 20px;
+}
+#about-design .about-design__wrap .about-design__item ul {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#about-design .about-design__wrap .about-design__item ul li h2 {
+  font-family: "SuisseIntl-Medium";
+  color: #232323;
+  font-size: 4.4em;
+  line-height: 94%;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+#about-design .second-block h1 {
+  margin: 90px 0 40px;
+}
+#about-design .second-block .second-block__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+#about-design .second-block .second-block__wrap .second-block__item {
+  max-width: 320px;
+  min-height: 240px;
+}
+#about-design .second-block .second-block__wrap .second-block__item p {
+  font-size: 1.2em;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  border-radius: 1.38vw;
+  background-color: #f3f3f3;
+  padding: 1.5rem;
+}
+#about-design .third-block {
+  margin: 70px 0 30px;
+}
+#about-design .third-block .third-block__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#about-design .third-block .third-block__wrap .third-block__item {
+  width: 280px;
+  padding: 1rem;
+  border-radius: 1.38vw;
+  background: #f3f3f3;
+  margin: 10px;
+}
+#about-design .third-block .third-block__wrap .third-block__item h3 {
+  font-size: 1.5rem;
+  color: rgba(34, 34, 34, 0.5019607843);
+  margin-bottom: 12px;
+}
+#about-design .third-block .third-block__wrap .third-block__item p {
+  font-size: 1em;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: -0.03em;
 }/*# sourceMappingURL=style.css.map */
