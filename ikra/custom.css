@@ -1,0 +1,21 @@
+@media screen and (min-width: 641px) {
+.t390__btn {
+    font-size: 25px !important;
+}
+}
+
+@media screen and (max-width: 640px) {
+.t390__btn {
+    font-size: 17px !important;
+}
+
+.t-heading_lg {
+    padding-bottom: 0px !important;
+}
+}
+
+
+.zindex {
+    z-index: 9997 !important;
+}
+
