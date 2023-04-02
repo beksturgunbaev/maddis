@@ -1967,4 +1967,111 @@
 }
 #footer .footer-line .footer-wrap__extra {
   border-top: 2px solid #232323;
+}
+
+.head-container ul {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.head-container ul li {
+  margin-right: 10px;
+  color: #905db4;
+}
+.head-container ul li img {
+  margin-top: 3px;
+  width: 20px;
+}
+.head-container h2 {
+  font-family: "SuisseIntl-Bold";
+  font-size: 52px;
+  margin-bottom: 60px;
+}
+
+#webinar .webinar-wrap {
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 0.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+@media (max-width: 1240px) {
+  #webinar .webinar-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  #webinar .webinar-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  #webinar .webinar-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+#webinar .webinar-wrap .webinar-item {
+  margin: 30px 0;
+}
+@media (max-width: 576px) {
+  #webinar .webinar-wrap .webinar-item {
+    margin: 16px 0;
+  }
+}
+#webinar .webinar-wrap .webinar-item a .webinar-item__img {
+  overflow: hidden;
+  border-radius: 4px;
+}
+#webinar .webinar-wrap .webinar-item a .webinar-item__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#webinar .webinar-wrap .webinar-item a h3 {
+  font-family: "SuisseIntl-Medium";
+  font-size: 20px;
+  color: #000;
+  line-height: 26px;
+  margin: 12px 0;
+  max-height: 78px;
+}
+#webinar .webinar-wrap .webinar-item a ul {
+  display: flex;
+  align-items: center;
+}
+#webinar .webinar-wrap .webinar-item a ul li {
+  color: #905db4;
+}
+#webinar .webinar-wrap .webinar-item a ul li:last-child {
+  color: #828282;
+}
+#webinar .webinar-wrap .webinar-item a p {
+  margin-top: 12px;
+  line-height: 22px;
+  color: #828282;
+}
+#webinar button {
+  border-radius: 40px;
+  border: 1px solid #d36133;
+  color: #d36133;
+  padding: 16px 36px;
+  width: 200px;
+  font-size: 18px;
+  line-height: 24px;
+  background: transparent;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+#webinar button:hover {
+  background: #d36133;
+  color: #fff;
+  border: 1px solid #fff;
 }/*# sourceMappingURL=style.css.map */
