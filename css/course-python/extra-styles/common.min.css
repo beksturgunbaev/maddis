@@ -2194,9 +2194,6 @@ a:focus {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-.ui-spoiler[open] {
-  height: calc(100% + 4px);
-}
 .ui-spoiler--grey {
   overflow: hidden;
   background-color: var(--bg-secondary-color);
