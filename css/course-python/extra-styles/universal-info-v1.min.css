@@ -1,0 +1,209 @@
+.ui-info__wrapper {
+  padding: 32px 20px;
+  border-radius: 16px;
+  color: var(--text-main-color);
+  background-color: var(--bg-secondary-color);
+}
+[data-admin-theme] .ui-info__wrapper {
+  color: var(--admin-color);
+  background-color: #d3fb46;
+}
+.ui-info__picture {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 32px;
+}
+.ui-info__title {
+  margin-bottom: 16px;
+}
+.ui-info__desc {
+  margin-bottom: 0;
+}
+.ui-info__list {
+  padding: 0;
+  list-style: none;
+  margin: 24px 0 0;
+}
+.ui-info__item {
+  position: relative;
+  padding-left: 18px;
+}
+.ui-info__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.ui-info__item::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--text-main-color);
+  content: "";
+}
+.ui-info__item--with-title:not(:last-child),
+.universal-info-details
+  .universal-info-details__list--with-title
+  li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.ui-info__item b,
+.ui-info__item span {
+  display: block;
+}
+.ui-info__additional-desc {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.ui-info__control {
+  margin-top: 32px;
+}
+.ui-info__learn-more:focus-visible {
+  border-color: transparent;
+}
+.ui-info__learn-more {
+  display: inline-block;
+  border-bottom: 1px dotted var(--stroke-accent-color);
+  color: inherit;
+  -webkit-transition: border-color 150ms ease-out;
+  transition: border-color 150ms ease-out;
+}
+.is-safari .ui-info__learn-more:focus {
+  border-color: transparent;
+}
+.ui-info__condition a:focus-visible {
+  text-decoration: none;
+}
+.ui-info__condition {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: var(--text-secondary-color);
+  text-align: center;
+}
+.ui-info__condition a {
+  color: inherit;
+  text-decoration: underline;
+}
+.is-safari .ui-info__condition a:focus {
+  text-decoration: none;
+}
+.universal-info-details__picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+.universal-info-details__desc {
+  margin-bottom: 0;
+}
+.universal-info-details .universal-info-details__list {
+  margin-top: 32px;
+}
+.universal-info-details__list--with-title .universal-info-details__subtitle {
+  display: block;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .ui-info__wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .ui-info__content {
+    max-width: 568px;
+  }
+  .ui-info__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .ui-info__button {
+    margin-right: 32px;
+  }
+  .universal-info-details {
+    width: 696px;
+  }
+  .universal-info-details__wrapper {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 120px 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .ui-info__wrapper {
+    display: grid;
+    grid-column-gap: 82px;
+    grid-template-columns: 270px 1fr;
+    padding: 48px;
+    border-radius: 20px;
+  }
+  .ui-info__picture {
+    grid-row: 1/2;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 0;
+  }
+  .ui-info__content {
+    -ms-flex-item-align: center;
+    align-self: center;
+    max-width: 656px;
+  }
+  .ui-info__title {
+    margin-bottom: 24px;
+  }
+  .ui-info__list {
+    margin-top: 32px;
+  }
+  .ui-info__item {
+    padding-left: 22px;
+  }
+  .ui-info__item::before {
+    top: 9px;
+  }
+  .ui-info__item--with-title:not(:last-child),
+  .universal-info-details
+    .universal-info-details__list--with-title
+    li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .ui-info__additional-desc {
+    margin-top: 32px;
+  }
+  .ui-info__control {
+    margin-top: 40px;
+  }
+  .ui-info__learn-more:hover {
+    border-color: transparent;
+  }
+  .ui-info__button {
+    margin-right: 40px;
+  }
+  .ui-info__condition {
+    margin-top: 20px;
+  }
+  .ui-info__condition a:hover {
+    text-decoration: none;
+  }
+  .universal-info-details {
+    width: 800px;
+  }
+  .universal-info-details__wrapper {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 767.9px) {
+  .ui-info__learn-more {
+    margin-bottom: 32px;
+  }
+  .universal-info-details__picture {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,46 @@
+.market__desc {
+  margin-bottom: 0;
+}
+.market__list {
+  padding: 0;
+  list-style: none;
+  margin: 40px 0 0;
+}
+.market__subtitle {
+  display: block;
+}
+.market__subdesc {
+  margin-bottom: 0;
+}
+.market__source {
+  display: block;
+  margin-top: 32px;
+  color: var(--text-secondary-color);
+}
+@media (min-width: 1024px) {
+  .market__list {
+    display: grid;
+    grid-gap: 48px 56px;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 56px;
+  }
+  .market__list--odd {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .market__source {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .market__desc,
+  .market__title {
+    max-width: 968px;
+  }
+}
+@media (max-width: 1023.9px) {
+  .market__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
