@@ -16,7 +16,7 @@ body {
 }
 #banner .container {
   min-height: 45rem;
-  background-image: url("./../../img/images_1/banner.png");
+  background-image: url("./../../img/images_1/banner.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
