@@ -269,6 +269,18 @@ header {
       text-decoration: underline;
       cursor: pointer;
     }
+    .show-btn {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    .hide-btn {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
     ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -276,7 +288,6 @@ header {
       margin-bottom: 20px;
       li {
         position: relative;
-        margin: 6px 0;
         padding-left: 20px;
         &::before {
           content: '';
@@ -288,6 +299,33 @@ header {
           height: 6px;
           border-radius: 100%;
           background-color: $colBlue;
+        }
+      }
+    }
+    .hide-elements {
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+      &.active {
+        display: grid;
+      }
+      .hide-elems__items {
+        p {
+          position: relative;
+          margin: 24px 0;
+          padding-left: 20px;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 6px;
+            min-width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: $colBlue;
+          }
         }
       }
     }
@@ -548,4 +586,61 @@ header {
       }
     }
   }
+}
+#bonuses {
+  padding: 60px 0;
+  background-color: $colBlue;
+  .content {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+      font-size: 36px;
+      line-height: 125%;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+    }
+    ul {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 10px 0 40px;
+      li {
+        position: relative;
+        color: #fff;
+        margin: 10px 0;
+        padding-left: 14px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 6px;
+          min-width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          background-color: $colGreen;
+        }
+      }
+    }
+    .link {
+      padding-top: 40px;
+      a {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 16px;
+        font-size: 18px;
+        border-radius: 4px;
+        background-color: $colGreen;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+footer {
+  padding: 20px 0;
 }

@@ -11,3 +11,20 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+const hideElements = document.querySelector('.hide-elements');
+const showBtn = document.querySelector('.show-btn');
+const hideBtn = document.querySelector('.hide-btn');
+
+showBtn.addEventListener('click', () => {
+  hideElements.classList.add('active');
+  showBtn.classList.remove('active');
+  hideBtn.classList.add('active');
+});
+
+hideBtn.addEventListener('click', () => {
+  hideElements.classList.remove('active');
+  showBtn.classList.add('active');
+  hideBtn.classList.remove('active');
+});
+
