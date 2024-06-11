@@ -2,6 +2,10 @@
   font-family: "Moscow-Sans";
   src: url("../fonts/moscowsansregular.ttf");
 }
+@font-face {
+  font-family: "Moscow-Sans-Light";
+  src: url("../fonts/MoscowSans-Light.otf");
+}
 .container {
   max-width: 1320px;
   width: 100%;
@@ -15,7 +19,7 @@ body {
 }
 
 header {
-  padding: 12px 0;
+  padding: 26px 0 12px;
   background-color: #0a65c2;
 }
 header div {
@@ -24,7 +28,7 @@ header div {
   align-items: center;
 }
 header div a {
-  width: 260px;
+  width: 220px;
 }
 @media (max-width: 576px) {
   header div a {
@@ -49,6 +53,39 @@ header div button {
 #main-block {
   background-color: #0a65c2;
   position: relative;
+}
+#main-block a {
+  justify-content: center;
+  align-items: center;
+  background-color: #30b875;
+  width: 420px;
+  height: 64px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  #main-block a {
+    width: 100%;
+    height: 56px;
+  }
+}
+#main-block .desktop-btn {
+  display: flex;
+}
+@media (max-width: 767px) {
+  #main-block .desktop-btn {
+    display: none !important;
+  }
+}
+#main-block .mobile-btn {
+  display: none;
+}
+@media (max-width: 767px) {
+  #main-block .mobile-btn {
+    display: flex !important;
+  }
 }
 #main-block .main-block__left {
   max-width: 760px;
@@ -82,6 +119,11 @@ header div button {
     font-size: 16px;
   }
 }
+@media (max-width: 576px) {
+  #main-block .main-block__left h4 {
+    font-family: "Moscow-Sans-Light";
+  }
+}
 #main-block .main-block__left h1 {
   font-size: 40px;
   line-height: 126%;
@@ -111,19 +153,14 @@ header div button {
     font-size: 16px;
   }
 }
-#main-block .main-block__left button {
-  background-color: #30b875;
-  width: 420px;
-  height: 64px;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
+@media (max-width: 767px) {
+  #main-block .main-block__left p {
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 576px) {
-  #main-block .main-block__left button {
-    width: 100%;
-    height: 56px;
+  #main-block .main-block__left p {
+    font-family: "Moscow-Sans-Light";
   }
 }
 #main-block .main-block__right {
@@ -162,7 +199,7 @@ header div button {
 @media (max-width: 767px) {
   #main-block .flex {
     display: block;
-    padding-top: 40px;
+    padding: 40px 0;
   }
 }
 
@@ -205,7 +242,6 @@ header div button {
   min-width: 200px;
   width: 200px;
   height: 190px;
-  overflow: hidden;
   border-radius: 100%;
 }
 @media (max-width: 767px) {
@@ -225,7 +261,6 @@ header div button {
 #about .about-block .flex .ava h3 {
   max-width: 200px;
   font-size: 20px;
-  font-weight: 700;
 }
 @media (max-width: 767px) {
   #about .about-block .flex .ava h3 {
@@ -234,6 +269,7 @@ header div button {
   }
 }
 #about .about-block .flex .ava p {
+  font-family: "Moscow-Sans-Light";
   max-width: 200px;
   opacity: 0.5;
 }
@@ -245,6 +281,7 @@ header div button {
   }
 }
 #about .about-block .flex .text-info {
+  font-family: "Moscow-Sans-Light";
   padding: 0 20px;
 }
 @media (max-width: 767px) {
@@ -498,6 +535,7 @@ header div button {
 }
 #about-two .extra-block .flex ul li {
   position: relative;
+  font-family: "Moscow-Sans-Light";
   font-size: 20px;
   color: gray;
   margin: 14px 0;
@@ -552,6 +590,7 @@ header div button {
   color: #0a65c2;
 }
 #book .content .btn {
+  font-family: "Moscow-Sans-Light";
   color: #30b875;
   font-size: 18px;
   text-decoration: underline;
@@ -582,6 +621,7 @@ header div button {
 }
 #book .content ul li {
   position: relative;
+  font-family: "Moscow-Sans-Light";
   padding-left: 20px;
 }
 #book .content ul li::before {
@@ -614,6 +654,7 @@ header div button {
 }
 #book .content .hide-elements .hide-elems__items p {
   position: relative;
+  font-family: "Moscow-Sans-Light";
   margin: 24px 0;
   padding-left: 20px;
 }

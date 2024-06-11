@@ -6,6 +6,10 @@ $colGray: #f1f1fd;
   font-family: 'Moscow-Sans';
   src: url('../fonts/moscowsansregular.ttf');
 }
+@font-face {
+  font-family: 'Moscow-Sans-Light';
+  src: url('../fonts/MoscowSans-Light.otf');
+}
 // =====================> Mixins for media queries <==============================
 @mixin _1200px {
   @media (max-width: 1200px) {
@@ -49,14 +53,14 @@ body {
   margin: 0;
 }
 header {
-  padding: 12px 0;
+  padding: 26px 0 12px;
   background-color: $colBlue;
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     a {
-      width: 260px;
+      width: 220px;
       @include _576px() {
         width: 170px;
       }
@@ -78,6 +82,33 @@ header {
 #main-block {
   background-color: $colBlue;
   position: relative;
+  a {
+    justify-content: center;
+    align-items: center;
+    background-color: $colGreen;
+    width: 420px;
+    height: 64px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    @include _576px() {
+      width: 100%;
+      height: 56px;
+    }
+  }
+  .desktop-btn {
+    display: flex;
+    @include _767px() {
+      display: none !important;
+    }
+  }
+  .mobile-btn {
+    display: none;
+    @include _767px() {
+      display: flex !important;
+    }
+  }
   .main-block__left {
     max-width: 760px;
     color: #fff;
@@ -97,6 +128,9 @@ header {
       font-size: 18px;
       @include _1200px() {
         font-size: 16px;
+      }
+      @include _576px() {
+        font-family: 'Moscow-Sans-Light';
       }
     }
     h1 {
@@ -121,18 +155,11 @@ header {
       @include _1200px() {
         font-size: 16px;
       }
-    }
-    button {
-      background-color: $colGreen;
-      width: 420px;
-      height: 64px;
-      border-radius: 6px;
-      font-size: 18px;
-      font-weight: 700;
-      color: #fff;
+      @include _767px() {
+        padding-bottom: 10px;
+      }
       @include _576px() {
-        width: 100%;
-        height: 56px;
+        font-family: 'Moscow-Sans-Light';
       }
     }
   }
@@ -164,7 +191,7 @@ header {
     min-height: 720px;
     @include _767px() {
       display: block;
-      padding-top: 40px;
+      padding: 40px 0;
     }
   }
 }
@@ -197,7 +224,6 @@ header {
           min-width: 200px;
           width: 200px;
           height: 190px;
-          overflow: hidden;
           border-radius: 100%;
           @include _767px() {
             margin: 0 auto;
@@ -214,13 +240,13 @@ header {
         h3 {
           max-width: 200px;
           font-size: 20px;
-          font-weight: 700;
           @include _767px() {
             text-align: center;
             margin: 0 auto;
           }
         }
         p {
+          font-family: 'Moscow-Sans-Light';
           max-width: 200px;
           opacity: 0.5;
           @include _767px() {
@@ -231,6 +257,7 @@ header {
         }
       }
       .text-info {
+        font-family: 'Moscow-Sans-Light';
         padding: 0 20px;
         @include _767px() {
           padding: 0;
@@ -426,6 +453,7 @@ header {
         }
         li {
           position: relative;
+          font-family: 'Moscow-Sans-Light';
           font-size: 20px;
           color: gray;
           margin: 14px 0;
@@ -475,6 +503,7 @@ header {
       }
     }
     .btn {
+      font-family: 'Moscow-Sans-Light';
       color: $colGreen;
       font-size: 18px;
       text-decoration: underline;
@@ -502,6 +531,7 @@ header {
       }
       li {
         position: relative;
+        font-family: 'Moscow-Sans-Light';
         padding-left: 20px;
         &::before {
           content: '';
@@ -533,6 +563,7 @@ header {
       .hide-elems__items {
         p {
           position: relative;
+          font-family: 'Moscow-Sans-Light';
           margin: 24px 0;
           padding-left: 20px;
           &::before {
