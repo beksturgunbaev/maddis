@@ -82,7 +82,8 @@ header {
 #main-block {
   background-color: $colBlue;
   position: relative;
-  a {
+  overflow: hidden;
+  button {
     justify-content: center;
     align-items: center;
     background-color: $colGreen;
@@ -166,13 +167,30 @@ header {
   .main-block__right {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -14px;
+    width: 635px;
+    height: 635px;
+    border-radius: 50%;
     transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
     @include _1200px() {
-      width: 40%;
+      width: 480px;
+      height: 480px;
+    }
+    @include _991px() {
+      width: 400px;
+      height: 400px;
     }
     @include _767px() {
       display: none;
+    }
+    img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
     }
   }
   .mobile-img {
@@ -712,11 +730,40 @@ header {
       grid-template-columns: repeat(1, 1fr);
       gap: 1rem;
     }
-    img {
-      @include _767px() {
+    .bppk-img {
+      width: 635px;
+      height: 635px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #f1f1fd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include _1200px() {
+        width: 500px;
+        height: 500px;
+      }
+      @include _991px() {
+        width: 400px;
+        height: 400px;
+        margin-top: 60px;
+      }
+      @include _576px() {
+        width: 320px;
+        height: 320px;
+      }
+      @include _400px() {
+        width: 280px;
+        height: 280px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         margin: 0 auto;
       }
     }
+
     .promotion-parent {
       max-width: 580px;
       width: 100%;
@@ -739,7 +786,24 @@ header {
           background-color: #f1f1fd;
           border-radius: 4px;
           padding: 24px;
+          min-height: 280px;
           position: relative;
+          .mini-txt {
+            position: absolute;
+            bottom: 10px;
+            right: 12px;
+            font-size: 12px;
+            opacity: 0.6;
+          }
+          @include _1200px() {
+            min-height: 235px;
+          }
+          @include _991px() {
+            min-height: 190px;
+          }
+          @include _576px() {
+            min-height: auto;
+          }
           @include _480px() {
             padding: 10px;
           }
@@ -758,6 +822,7 @@ header {
             }
             @include _991px() {
               font-size: 40px;
+              padding-bottom: 14px;
             }
           }
           .flex {
@@ -770,6 +835,7 @@ header {
               color: #000;
               padding: 0;
               text-align: left;
+              line-height: 120%;
               @include _1200px() {
                 font-size: 28px;
               }
@@ -812,6 +878,13 @@ header {
           text-align: center;
           font-size: 24px;
           padding: 16px 0 10px;
+          min-height: 76px;
+          @include _991px() {
+            min-height: 50px;
+          }
+          @include _767px() {
+            min-height: auto;
+          }
         }
         ul {
           display: grid;
@@ -845,7 +918,8 @@ header {
           color: #fff;
         }
       }
-      a {
+      .gumroad-button {
+        font-family: 'Moscow-Sans';
         background-color: $colGreen;
         color: #fff;
         border-radius: 6px;
@@ -856,8 +930,18 @@ header {
         width: 100%;
         display: flex;
         justify-content: center;
-        @include _480px() {
-          padding: 16px;
+        @include _576px() {
+          font-size: 15px;
+          padding: 14px 8px;
+        }
+        span {
+          font-family: 'Moscow-Sans';
+          font-size: 12px;
+          margin-top: 6px;
+          @include _576px() {
+            font-size: 10px;
+            margin-top: 4px;
+          }
         }
       }
     }
@@ -886,11 +970,13 @@ header {
       margin: 10px 0 0;
       &:last-child {
         border-bottom: 1px solid #848199;
+        padding-bottom: 8px;
       }
       .faq_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         h5 {
           font-size: 18px;
         }
@@ -898,7 +984,6 @@ header {
           min-width: 20px;
           width: 20px;
           height: 20px;
-          cursor: pointer;
           transition: 0.3s;
           &.active {
             transform: rotate(45deg);
@@ -938,6 +1023,12 @@ header {
       @include _576px() {
         font-size: 20px;
       }
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      margin: 10px 0;
+      opacity: 0.7;
     }
     ul {
       max-width: 520px;

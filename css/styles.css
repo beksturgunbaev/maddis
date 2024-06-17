@@ -53,8 +53,9 @@ header div button {
 #main-block {
   background-color: #0a65c2;
   position: relative;
+  overflow: hidden;
 }
-#main-block a {
+#main-block button {
   justify-content: center;
   align-items: center;
   background-color: #30b875;
@@ -66,7 +67,7 @@ header div button {
   color: #fff;
 }
 @media (max-width: 576px) {
-  #main-block a {
+  #main-block button {
     width: 100%;
     height: 56px;
   }
@@ -166,18 +167,38 @@ header div button {
 #main-block .main-block__right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -14px;
+  width: 635px;
+  height: 635px;
+  border-radius: 50%;
   transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 1200px) {
   #main-block .main-block__right {
-    width: 40%;
+    width: 480px;
+    height: 480px;
+  }
+}
+@media (max-width: 991px) {
+  #main-block .main-block__right {
+    width: 400px;
+    height: 400px;
   }
 }
 @media (max-width: 767px) {
   #main-block .main-block__right {
     display: none;
   }
+}
+#main-block .main-block__right img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #main-block .mobile-img {
   display: none;
@@ -831,10 +852,47 @@ header div button {
     gap: 1rem;
   }
 }
-@media (max-width: 767px) {
-  #promotion .grid img {
-    margin: 0 auto;
+#promotion .grid .bppk-img {
+  width: 635px;
+  height: 635px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #f1f1fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  #promotion .grid .bppk-img {
+    width: 500px;
+    height: 500px;
   }
+}
+@media (max-width: 991px) {
+  #promotion .grid .bppk-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  #promotion .grid .bppk-img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 400px) {
+  #promotion .grid .bppk-img {
+    width: 280px;
+    height: 280px;
+  }
+}
+#promotion .grid .bppk-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
 }
 #promotion .grid .promotion-parent {
   max-width: 580px;
@@ -865,7 +923,30 @@ header div button {
   background-color: #f1f1fd;
   border-radius: 4px;
   padding: 24px;
+  min-height: 280px;
   position: relative;
+}
+#promotion .grid .promotion-parent .promotion-div .promotion-div__block .mini-txt {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+@media (max-width: 1200px) {
+  #promotion .grid .promotion-parent .promotion-div .promotion-div__block {
+    min-height: 235px;
+  }
+}
+@media (max-width: 991px) {
+  #promotion .grid .promotion-parent .promotion-div .promotion-div__block {
+    min-height: 190px;
+  }
+}
+@media (max-width: 576px) {
+  #promotion .grid .promotion-parent .promotion-div .promotion-div__block {
+    min-height: auto;
+  }
 }
 @media (max-width: 480px) {
   #promotion .grid .promotion-parent .promotion-div .promotion-div__block {
@@ -893,6 +974,7 @@ header div button {
 @media (max-width: 991px) {
   #promotion .grid .promotion-parent .promotion-div .promotion-div__block h2 {
     font-size: 40px;
+    padding-bottom: 14px;
   }
 }
 #promotion .grid .promotion-parent .promotion-div .promotion-div__block .flex {
@@ -906,6 +988,7 @@ header div button {
   color: #000;
   padding: 0;
   text-align: left;
+  line-height: 120%;
 }
 @media (max-width: 1200px) {
   #promotion .grid .promotion-parent .promotion-div .promotion-div__block .flex h4 {
@@ -952,6 +1035,17 @@ header div button {
   text-align: center;
   font-size: 24px;
   padding: 16px 0 10px;
+  min-height: 76px;
+}
+@media (max-width: 991px) {
+  #promotion .grid .promotion-parent .promotion-div h4 {
+    min-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #promotion .grid .promotion-parent .promotion-div h4 {
+    min-height: auto;
+  }
 }
 #promotion .grid .promotion-parent .promotion-div ul {
   display: grid;
@@ -984,7 +1078,8 @@ header div button {
   font-size: 14px;
   color: #fff;
 }
-#promotion .grid .promotion-parent a {
+#promotion .grid .promotion-parent .gumroad-button {
+  font-family: "Moscow-Sans";
   background-color: #30b875;
   color: #fff;
   border-radius: 6px;
@@ -996,9 +1091,21 @@ header div button {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 480px) {
-  #promotion .grid .promotion-parent a {
-    padding: 16px;
+@media (max-width: 576px) {
+  #promotion .grid .promotion-parent .gumroad-button {
+    font-size: 15px;
+    padding: 14px 8px;
+  }
+}
+#promotion .grid .promotion-parent .gumroad-button span {
+  font-family: "Moscow-Sans";
+  font-size: 12px;
+  margin-top: 6px;
+}
+@media (max-width: 576px) {
+  #promotion .grid .promotion-parent .gumroad-button span {
+    font-size: 10px;
+    margin-top: 4px;
   }
 }
 
@@ -1028,11 +1135,13 @@ header div button {
 }
 #faq .content .faq_parent:last-child {
   border-bottom: 1px solid #848199;
+  padding-bottom: 8px;
 }
 #faq .content .faq_parent .faq_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 #faq .content .faq_parent .faq_title h5 {
   font-size: 18px;
@@ -1041,7 +1150,6 @@ header div button {
   min-width: 20px;
   width: 20px;
   height: 20px;
-  cursor: pointer;
   transition: 0.3s;
 }
 #faq .content .faq_parent .faq_title .faq_btn.active {
@@ -1083,6 +1191,12 @@ header div button {
   #bonuses .content h1 {
     font-size: 20px;
   }
+}
+#bonuses .content p {
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  opacity: 0.7;
 }
 #bonuses .content ul {
   max-width: 520px;
