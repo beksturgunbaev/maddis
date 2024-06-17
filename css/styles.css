@@ -191,7 +191,17 @@ header div button {
 }
 @media (max-width: 767px) {
   #main-block .main-block__right {
-    display: none;
+    position: inherit;
+    top: auto;
+    right: auto;
+    transform: translate(0, 0);
+    margin: 10px auto 30px;
+  }
+}
+@media (max-width: 576px) {
+  #main-block .main-block__right {
+    width: 100%;
+    height: auto;
   }
 }
 #main-block .main-block__right img {
@@ -200,16 +210,10 @@ header div button {
   -o-object-fit: contain;
      object-fit: contain;
 }
-#main-block .mobile-img {
-  display: none;
-}
-@media (max-width: 767px) {
-  #main-block .mobile-img {
-    display: block;
-    padding: 30px 0;
-  }
-  #main-block .mobile-img img {
-    margin: 0 auto;
+@media (max-width: 576px) {
+  #main-block .main-block__right img {
+    width: 65%;
+    height: auto;
   }
 }
 #main-block .flex {
@@ -877,14 +881,8 @@ header div button {
 }
 @media (max-width: 576px) {
   #promotion .grid .bppk-img {
-    width: 320px;
-    height: 320px;
-  }
-}
-@media (max-width: 400px) {
-  #promotion .grid .bppk-img {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    height: auto;
   }
 }
 #promotion .grid .bppk-img img {
@@ -893,6 +891,12 @@ header div button {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
+}
+@media (max-width: 576px) {
+  #promotion .grid .bppk-img img {
+    width: 65%;
+    height: auto;
+  }
 }
 #promotion .grid .promotion-parent {
   max-width: 580px;
@@ -1223,7 +1227,7 @@ header div button {
 #bonuses .content .link {
   padding-top: 40px;
 }
-#bonuses .content .link a {
+#bonuses .content .link button {
   display: flex;
   justify-content: center;
   max-width: 400px;
